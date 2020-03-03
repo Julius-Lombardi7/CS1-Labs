@@ -26,7 +26,7 @@ class LinkedList:
 	def getTail(self):
 
 		def setTail(self, t):
-			self.Tail =  t
+			self.tail =  t
 
 	def isEmpty(self):
 
@@ -41,27 +41,33 @@ class LinkedList:
 
 		if(self.isEmpty()):
 			self.setHead(newNode)
-			self.setTail(newNode)
-			self.setSize(size + 1)
+			#self.setTail(newNode)
+			#self.setSize(size + 1)
+
+			self.getTail().setnetPointer
 
 		else:
-			print("HERE")
-			temp_tail = self.getTail()
-			print(temp_tail.getData
+			self.getTail().setnextPointer(newNode)
+			t = self.getTail()
+			print(temp_tail.getData)
 
 
 		self.setTail(newNode)
-		self.setSize(self.size + 1)
+		self.setSize += 1 #self.size = self.size + 1
 
 def main():
 
-	ll = LinkedList()
-	ll.addNode(1000)
-	ll.addNode(2000)
+	l = LinkedList()
+	l.addNode(100)
+	l.addNode(200)
+	l.addNode("AU")
+
 
 	print(ll.getTail.getData())
 
-	ll.addNode("The American Unoversity")
+	#print(l.getsize())
+
+	ll.addNode("The American University")
 
 if __name__ == '__main__':
 	main()
@@ -74,5 +80,3 @@ if __name__ == '__main__':
 
 
 
-if __name__ == '__main__':
-	main()
